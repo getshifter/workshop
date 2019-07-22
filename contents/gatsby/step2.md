@@ -202,3 +202,8 @@ error gatsby-node.js returned an error
 - [ ] ローカル表示したサイトにWordPressで書いたコンテンツが表示されている
 - [ ] `npm run build` or `yarn run build`でGatsbyのビルドに成功
 - [ ] ビルドしたサイトにWordPressで書いたコンテンツが表示されている
+
+## Navigation
+- [Step1: WordPressサイトのセットアップ](/step1.md)
+- [Step2: GatsbyでWordPressのデータをインポートする](/step2.md)
+- [Step3: Shifter Webhookで毎回変わるWordPressにURLに対応する](/step3.md)

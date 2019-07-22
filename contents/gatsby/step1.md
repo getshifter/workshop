@@ -16,3 +16,8 @@ ShifterでWordPressを起動し、投稿・固定ページ・タグ・カテゴ�
 - [ ] １つ以上の固定ページが公開されている
 - [ ] １つ以上のタグが設定されている
 - [ ] １つ以上のカテゴリーが設定されている
+
+## Navigation
+- [Step1: WordPressサイトのセットアップ](/step1.md)
+- [Step2: GatsbyでWordPressのデータをインポートする](/step2.md)
+- [Step3: Shifter Webhookで毎回変わるWordPressにURLに対応する](/step3.md)

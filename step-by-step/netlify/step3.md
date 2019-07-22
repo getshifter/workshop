@@ -59,3 +59,10 @@ Branchはmasterのまま、[Save]をクリックします。
 作成されたWebhookのURLをコピーします。
 
 ![screenthos](../gatsby/img/17.png)
+
+
+## Checklist
+- [ ] Netlifyでサイトを作成した
+- [ ] Netlifyのデプロイ設定を行った
+- [ ] 初回のビルドが実行され、failした
+- [ ] NetlifyのWebhook URLを取得した

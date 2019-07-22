@@ -32,3 +32,9 @@ $ mv "${ARTIFACT_ID}" public
 ```
 
 `_headers`や`_redirect`など、Netlify用に追加したいファイルがある場合は、この`./netlify/deploy.sh`に処理を追加してカスタマイズしましょう。
+
+
+## Checklist
+- [ ] リポジトリをforkした
+- [ ] デプロイ時の処理についてざっと把握した
+- [ ] カスタマイズ方法をざっと理解した

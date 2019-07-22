@@ -8,11 +8,12 @@ $ cd wp-shifter
 
 ## 2-1: ShifterでWordPressを起動する
 ShifterのDashboardから、WordPressを起動させましょう。
-[img]
+![./img/2.png]
 
 [Visit Site]をクリックし、アドレスバーからWordPressのURLを''https://''と最後の`/`は含めずに、コピーします。
 ※例：21288870-c825-11e7-ae0e-8a238b67b5f2.app.getshifter.io:43014
 
+![./img/3.png]
 
 ## 2-2: GatsbyでWordPressのデータをインポートする
 wp-shifterのディレクトリへ移動します。
@@ -121,7 +122,7 @@ To create a production build, use gatsby build
 ```
 
 http://localhost:8000/にアクセスすると、GatsbyがWordPressの記事を表示している状態が確認できます。
-[img]
+![./img/4.png]
 
 ## 2-4: [opt] ビルドして公開できるHTMLファイルを生成する
 

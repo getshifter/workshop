@@ -101,12 +101,12 @@ Step2で作成したGatsbyサイトをGitHubへアップロードします。
 https://github.com/new から新しくリポジトリを作成します。
 今回はワークショップですので、"Public"で問題ありません。
 
-[img]
+![./img/5.png]
 ※ Netlifyはprivate リポジトリにも対応しています、実運用ではprivateリポジトリを利用することを推奨します。
 
 作成後、[Clone or download]からGitリポジトリのURLをコピーしておきましょう。
 
-[img]
+![./img/6.png]
 
 ### GatsbyサイトをGit addする
 
@@ -143,6 +143,28 @@ Netlifyにログインします。
 https://app.netlify.com/
 
 [New site from Git]をクリックし、サイトを作成します。
+![./img/7.png]
+
+[GitHub]を指定し、認証を許可します。
+![./img/8.png]
+
+先程作成したリポジトリを選びます。
+
+![./img/9.png]
+
+ビルドの設定を行います。
+以下のような設定になっていることを確認してください。
+
+|項目|値|備考|
+|:--|:--|:--|
+|Owner|<あなたのユーザー名>'s team|ここはどんな値でもOK|
+|Branch to deploy|master||
+|Build command|./build.sh||
+|Public directory|public||
+
+![./img/10.png]
+
+最後に[Deploy site]をクリックすればOKです。
 
 ### Note:初回のビルドについて
 設定が終わると、Netlifyが初回のビルドを開始します。  

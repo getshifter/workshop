@@ -1,5 +1,5 @@
 # Step1: Shifter入門
-アカウント作成からWordPressサイトの公開まで
+Shifterのアカウント作成から、基本的な使い方までを学びます。
 
 ## Navigation
 

@@ -217,3 +217,4 @@ Step2はGatsbyでWordPressサイトのデータをインポートする方法を
 - [Step1: WordPressサイトのセットアップ](./step1.md)
 - NOW -> [Step2: GatsbyでWordPressのデータをインポートする](./step2.md)
 - [Step3: Shifter Webhookで毎回変わるWordPressにURLに対応する](./step3.md)
+- [Advanced challenge](./advanced.md)

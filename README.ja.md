@@ -13,6 +13,6 @@ Shifterのワークショップで利用するドキュメントをまとめて�
 
 ## Step By Step
 
-|Name|URL|
+|Name|Description|URL|
 |:--|:--|
-|Gatsby + Shifter|[./step-by-step/gatsby/README.md](./step-by-step/gatsby/README.md)
+|Gatsby + ShifterでServerless WordPress|Gatsby / Netlify / Shifterを利用した、WordPressとSSG(Static Site Generator)の運用について学ぶ|[./step-by-step/gatsby/README.md](./step-by-step/gatsby/README.md)|

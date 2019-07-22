@@ -66,3 +66,11 @@ Branchはmasterのまま、[Save]をクリックします。
 - [ ] Netlifyのデプロイ設定を行った
 - [ ] 初回のビルドが実行され、failした
 - [ ] NetlifyのWebhook URLを取得した
+
+## Navigation
+- [Step1: Webhook対応プランに変更する](./step1.md)
+- [Step2: Netlifyデプロイ用のテンプレートをインポートする](./step2.md)
+- Now -> [Step3: Netlifyにサイトを作成する](./step3.md)
+- [Step4: ShifterサイトからWebhookでデプロイする](./step4.md)
+- [Tier Down: プランをダウングレードする](./tierdown.md)
+- [Advanced challenge](./advanced.md)

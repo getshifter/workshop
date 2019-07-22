@@ -21,3 +21,15 @@
 https://go.getshifter.io/admin/accounts/subscription
 ![workshop screenshot](./img/23.png)
 
+Freeプランに変更されていればOKです。
+![workshop screenshot](./img/24.png)
+
+
+
+## Navigation
+- [Step1: Webhook対応プランに変更する](./step1.md)
+- [Step2: Netlifyデプロイ用のテンプレートをインポートする](./step2.md)
+- [Step3: Netlifyにサイトを作成する](./step3.md)
+- [Step4: ShifterサイトからWebhookでデプロイする](./step4.md)
+- Now -> [Tier Down: プランをダウングレードする](./tierdown.md)
+- [Advanced challenge](./advanced.md)

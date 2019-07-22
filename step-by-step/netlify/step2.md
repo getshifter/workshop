@@ -38,3 +38,12 @@ $ mv "${ARTIFACT_ID}" public
 - [ ] リポジトリをforkした
 - [ ] デプロイ時の処理についてざっと把握した
 - [ ] カスタマイズ方法をざっと理解した
+
+
+## Navigation
+- [Step1: Webhook対応プランに変更する](./step1.md)
+- Now -> [Step2: Netlifyデプロイ用のテンプレートをインポートする](./step2.md)
+- [Step3: Netlifyにサイトを作成する](./step3.md)
+- [Step4: ShifterサイトからWebhookでデプロイする](./step4.md)
+- [Tier Down: プランをダウングレードする](./tierdown.md)
+- [Advanced challenge](./advanced.md)

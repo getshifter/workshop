@@ -42,3 +42,11 @@ https://go.getshifter.io/admin/accounts/subscription
 - [ ] Couponを登録した
 - [ ] Webhook対応プランに変更した
 - [ ] Webhook設定ページが利用可能になった
+
+## Navigation
+- Now -> [Step1: Webhook対応プランに変更する](./step1.md)
+- [Step2: Netlifyデプロイ用のテンプレートをインポートする](./step2.md)
+- [Step3: Netlifyにサイトを作成する](./step3.md)
+- [Step4: ShifterサイトからWebhookでデプロイする](./step4.md)
+- [Tier Down: プランをダウングレードする](./tierdown.md)
+- [Advanced challenge](./advanced.md)

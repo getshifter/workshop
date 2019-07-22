@@ -53,3 +53,18 @@ Netlify側でデプロイが成功していることを確認しましょう。
 - [ ] Generateを実行し、WebhookでNetlifyと連携した
 - [ ] Netlifyでビルドが成功した
 - [ ] Netlifyでサイトが公開された
+
+## まとめ
+ShifterはWebhookを利用することで、Generateが完了した時にDL URLを任意のURLに送信できます。  
+NetlifyやAmazon S3などの外部サーバにデプロイするスクリプトとAPIを用意することで、より柔軟なサイト運営が可能です。
+
+またNetlifyを利用することで、Form / FunctionやA/Bテスト、Slack通知といったNetlifyが提供するホスティング機能を利用することもできます。
+
+
+## Navigation
+- [Step1: Webhook対応プランに変更する](./step1.md)
+- [Step2: Netlifyデプロイ用のテンプレートをインポートする](./step2.md)
+- [Step3: Netlifyにサイトを作成する](./step3.md)
+- [Step4: ShifterサイトからWebhookでデプロイする](./step4.md)
+- -> [Tier Down: プランをダウングレードする](./tierdown.md)
+- [Advanced challenge](./advanced.md)

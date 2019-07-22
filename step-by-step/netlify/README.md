@@ -1,6 +1,6 @@
 # Webhookを利用したNetlifyへのデプロイ
 ShifterはWebhookを利用してGenerateした静的ファイルを外部に公開するワークフローが構築できます。
-ここでは、Netlifyと連携して公開する方法について体験します。
+ここでは、NetlifyにWordPressサイトを公開する方法について体験します。
 
 ## Navigation
 - [Step1: Webhook対応プランに変更する](./step1.md)

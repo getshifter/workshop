@@ -18,6 +18,7 @@ Shifterのワークショップで利用するドキュメントをまとめて�
 新しい機能やまだ触ったことのない機能について触れたい場合にお使いください。
 
 |Name|Description|URL|
-|:--|:--|
-|Shifter入門|[アカウント作成からWordPressサイトの公開まで](./step-by-step/getting-started/README.md)|
+|:--|:--|:--|
+|Shifter入門|アカウント作成からWordPressサイトの公開まで|[./step-by-step/getting-started/README.md](./step-by-step/getting-started/README.md)|
+|WebhookでNetlify連携|Shifter Webhook / Netlifyを利用し、外部サーバーへの公開フローを学ぶ|[./step-by-step/netlify/README.md](./step-by-step/netlify/README.md)|
 |Gatsby + ShifterでServerless WordPress|Gatsby / Netlify / Shifterを利用した、WordPressとSSG(Static Site Generator)の運用について学ぶ|[./step-by-step/gatsby/README.md](./step-by-step/gatsby/README.md)|

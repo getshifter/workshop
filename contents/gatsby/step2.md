@@ -203,6 +203,14 @@ error gatsby-node.js returned an error
 - [ ] `npm run build` or `yarn run build`でGatsbyのビルドに成功
 - [ ] ビルドしたサイトにWordPressで書いたコンテンツが表示されている
 
+## Step2: まとめ
+
+Step2はGatsbyでWordPressサイトのデータをインポートする方法を体験しました。  
+この方法を使うことで、WordPressのテーマ・PHPを利用することなく、React / Gatsbyを利用してWordPressサイトを構築することができます。
+
+通常のWordPressサイトであれば、あとはサイト更新の度に`yarn run build`を実行すればOKです。
+ただしShifterではWordPressのURLが起動の度に変更されます。  
+そこでStep3では、常に変わるWordPressのURLに対応しつつ、WordPress側の操作だけでGatsbyのビルド・デプロイを行う方法を学びます。
 
 ## Navigation
 - [Step1: WordPressサイトのセットアップ](./step1.md)

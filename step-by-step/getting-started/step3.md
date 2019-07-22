@@ -1,4 +1,6 @@
 # Step3: HTMLの生成（Generate）と公開
+Step2でWordPressでのサイト構築ができました。  
+Step3ではいよいよWordPressを静的なHTMLに変換します。
 
 ## 3-1: Generateの開始
 ShifterのDashboardから[Generate]をクリックしします。
@@ -76,3 +78,12 @@ WordPress管理画面からもGenerate操作ができます。
 - [ ] 自動デプロイをオンオフ変更する
 - [ ] プレビューを確認する
 - [ ] ロールバックする
+
+
+
+## Navigation
+
+- [Step1: アカウントの作成](./step1.md)
+- [Step2: サイトの作成と管理画面の操作](./step2.md)
+- Now -> [Step3: HTMLの生成（Generate）と公開](./step3.md)
+- [Step4: トライアルモードからFreeプランへ移行する](./step4.md)

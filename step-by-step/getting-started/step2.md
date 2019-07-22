@@ -105,3 +105,10 @@ Shifterで起動するWordPressはデフォルトで以下の状態です。
 - [ ] WordPressを停止すると、アクセスできなくなることを確認する
 - [ ] 起動の度にURLの一部が変わることを確認する
 - [ ] パスワードレスにログインする方法を確認する
+
+## Navigation
+
+- [Step1: アカウントの作成](./step1.md)
+- NOW -> [Step2: サイトの作成と管理画面の操作](./step2.md)
+- [Step3: HTMLの生成（Generate）と公開](./step3.md)
+- [Step4: トライアルモードからFreeプランへ移行する](./step4.md)

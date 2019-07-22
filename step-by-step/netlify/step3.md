@@ -25,4 +25,37 @@ https://app.netlify.com/
 
 ![workshop screenshot](./img/13.png)
 
+最後に[Deploy site]をクリックすればOKです。
+
+### Note:初回のビルドについて
+設定が終わると、Netlifyが初回のビルドを開始します。  
+しかし次のステップのビルド方法でなければ、WordPressのURLが存在しない状態のため必ず失敗します。
+
+Failの通知や表示が出ますが、慌てずに次のステップに移りましょう。
+
 ## 3-2: Webhook URLを取得する
+
+### Netlify WebhookのURLを取得する
+Netlifyの管理画面を開き、先程作成したサイトを選択します。
+![screenshot](../gatsby/img/11.png)
+
+[Deploys]を選択します。
+![sceenshot](../gatsby/img/12.png)
+
+[Deploy Settings]を選択します。
+![screenthot](../gatsby/img/13.png)
+
+スクロールして[Build hooks]を表示します。
+
+![screenthos](../gatsby/img/14.png)
+
+[Add build hook]をクリックします。
+![screenthos](../gatsby/img/15.png)
+
+[Name]にShifterのビルドで使用するということを書きます。
+Branchはmasterのまま、[Save]をクリックします。
+
+![screenthos](../gatsby/img/16.png)
+作成されたWebhookのURLをコピーします。
+
+![screenthos](../gatsby/img/17.png)

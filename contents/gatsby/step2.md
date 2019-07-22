@@ -1,31 +1,4 @@
-# Gatsby + ShifterでServerless WordPress
-Gatsby / Netlify / Shifterを利用した、WordPressとSSG(Static Site Generator)の運用について学ぶ
-
-## 利用するもの
-- Gatsby WordPress plugin: https://www.gatsbyjs.org/packages/gatsby-source-wordpress/
-- Shifter Webhook (Outbound)
-- Netlify
-
-## Step1: WordPressサイトのセットアップ
-Gatsbyプラグインを利用するためには、以下の設定が必要です。
-
-- １つ以上の投稿が公開されている
-- １つ以上の固定ページが公開されている
-- １つ以上のタグが設定されている
-- １つ以上のカテゴリーが設定されている
-- パーマリンクに日本語が含まれていない
-
-ShifterでWordPressを起動し、投稿・固定ページ・タグ・カテゴリーが１つ以上存在するか確認しましょう。
-パーマリンクについては、`/archives/%post_id%/`や`数字ベース`などを利用するとよいでしょう。
-
-### Checklist
-
-- [ ] １つ以上の投稿が公開されている
-- [ ] １つ以上の固定ページが公開されている
-- [ ] １つ以上のタグが設定されている
-- [ ] １つ以上のカテゴリーが設定されている
-
-## Step2: GatsbyでWordPressのデータをインポートする
+# Step2: GatsbyでWordPressのデータをインポートする
 Gatsbyのプラグインを利用して、WordPressの記事をGatsby(React)で表示させましょう。
 
 ```bash
@@ -33,7 +6,7 @@ $ npx gatsby new wp-shifter https://github.com/GatsbyCentral/gatsby-starter-word
 $ cd wp-shifter
 ```
 
-### 2-1: ShifterでWordPressを起動する
+## 2-1: ShifterでWordPressを起動する
 ShifterのDashboardから、WordPressを起動させましょう。
 [img]
 
@@ -41,12 +14,12 @@ ShifterのDashboardから、WordPressを起動させましょう。
 ※例：21288870-c825-11e7-ae0e-8a238b67b5f2.app.getshifter.io:43014
 
 
-### 2-2: GatsbyでWordPressのデータをインポートする
+## 2-2: GatsbyでWordPressのデータをインポートする
 wp-shifterのディレクトリへ移動します。
 先程コピーしたURLを`gatsby-config.js`の`plugins[].options.baseUrlに貼り付けます。
 
 
-#### 例
+### 例
 ```javascript
 module.exports = {
   siteMetadata: {
@@ -89,11 +62,11 @@ module.exports = {
 
 ```
 
-### 2-3: Gatsbyでサイトをビルドする
+## 2-3: Gatsbyでサイトをビルドする
 それでは実際にWordPressサイトのデータをGatsby経由で表示させましょう。
 Gatsbyは`npm start`または`yarn start`でローカル開発モードが起動します。
 
-#### npm
+### npm
 ```bash
 $ pwd
 /PATH/TO/wp-shifter
@@ -101,7 +74,7 @@ $ npm install
 $ npm start
 ```
 
-#### yarn
+### yarn
 ```bash
 $ pwd
 /PATH/TO/wp-shifter
@@ -109,7 +82,7 @@ $ yarn
 $ yarn start
 ```
 
-#### Note: `start`コマンドでのエラーメッセージについて
+### Note: `start`コマンドでのエラーメッセージについて
 WP APIを総ナメする仕様上、`start`コマンド実行中にいくつか赤色のメッセージが表示されます。
 しかしこれはログインが必要なAPIなどにアクセスを試行していることが原因ですので、以下のようなメッセージについては無視して問題ありません。
 
@@ -131,7 +104,7 @@ Inner exception message : "サイドバーを読み込む権限がありませ�
 Inner exception message : "その操作を実行する権限がありません。"
 ```
 
-#### サイトを確認する
+### サイトを確認する
 startに成功すると、以下のようなメッセージが表示されます。
 
 ```bash
@@ -150,7 +123,7 @@ To create a production build, use gatsby build
 http://localhost:8000/にアクセスすると、GatsbyがWordPressの記事を表示している状態が確認できます。
 [img]
 
-### 2-4: [opt] ビルドして公開できるHTMLファイルを生成する
+## 2-4: [opt] ビルドして公開できるHTMLファイルを生成する
 
 `yarn run build`または`npm run build`を実行すると、Gatsbyが静的なHTMLファイルを生成します。
 
@@ -176,9 +149,9 @@ info Done building in 25.832 sec
 ビルドされたHTMLは`public/`ディレクトリに保存されます。
 `cd public && php -S localhost:8001`などで生成されたファイルを見てみましょう。
 
-#### Troubleshooting: buildがfailする
+### Troubleshooting: buildがfailする
 
-##### WebpackError: TypeError: Cannot destructure property `wordpressPost` of 'undefin  ed' or 'null'.
+#### WebpackError: TypeError: Cannot destructure property `wordpressPost` of 'undefin  ed' or 'null'.
 
 ```bash
 error Building static HTML for pages failed
@@ -200,7 +173,7 @@ See our docs page on debugging HTML builds for help https://goo.gl/yL9lND
 WordPressのパーマリンクが日本語になっていると、importに失敗します。
 WordPress管理画面から、パーマリンクの設定を``に変更してください。
 
-##### GraphQLError: Cannot query field "allWordpressPage" on type "Query". Did you mea  n "allWordpressTag", "allWordpressPost", "allWordpressWpTypes", "wordpressTag",   or "allWordpressWpUsers"?
+#### GraphQLError: Cannot query field "allWordpressPage" on type "Query". Did you mea  n "allWordpressTag", "allWordpressPost", "allWordpressWpTypes", "wordpressTag",   or "allWordpressWpUsers"?
 ```bash
 
 GraphQL request (3:7)
@@ -223,6 +196,9 @@ error gatsby-node.js returned an error
 - １つ以上のカテゴリーが設定されている
 
 
-## Step3: Shifter Webhookで毎回変わるWordPressにURLに対応する
+## Checklist
 
-Step2でビルドしたものを、Netlify
+- [ ] `npm start` or `yarn start`でGatsbyサイトをローカル表示
+- [ ] ローカル表示したサイトにWordPressで書いたコンテンツが表示されている
+- [ ] `npm run build` or `yarn run build`でGatsbyのビルドに成功
+- [ ] ビルドしたサイトにWordPressで書いたコンテンツが表示されている

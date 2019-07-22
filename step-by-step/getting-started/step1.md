@@ -39,3 +39,4 @@ Dashboardが表示されればOKです。
 - [Step2: サイトの作成と管理画面の操作](./step2.md)
 - [Step3: HTMLの生成（Generate）と公開](./step3.md)
 - [Step4: トライアルモードからFreeプランへ移行する](./step4.md)
+- [Advanced challenge](./advanced.md)

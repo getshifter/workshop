@@ -6,6 +6,12 @@ Gatsby / Netlify / Shifterを利用した、WordPressとSSG(Static Site Generato
 - Shifter Webhook (Outbound)
 - Netlify
 
+## できるようになること
+
+- Gatsbyを利用したWordPressサイトのビルド
+- Netlify WebhookとShifterを利用したデプロイ
+- Gatsbyを利用したWebサイトのビルドを、WordPress側で制御する
+- Shifter / Netlifyを利用した、Gatsby + WordPressサイトのサーバーレスな運用
 
 ## Navigation
 - [Step1: WordPressサイトのセットアップ](./step1.md)

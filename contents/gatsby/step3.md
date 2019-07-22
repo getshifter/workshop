@@ -199,7 +199,31 @@ Branchはmasterのまま、[Save]をクリックします。
 
 ![screenthos](./img/17.png)
 
+### ShifterでWebhookを設定する
+ShifterでWordPressを起動します。  
+起動後、[Dashboard]をクリックします。
+![screenthos](./img/2.png)
 
+WordPress管理画面で、[Shifter > Webhook]を選択します。
+先程コピーしたNetlifyのWebhook URLを貼り付けて[Save Changes]をクリックしましょう。
+![screenthos](./img/18.png)
+
+
+上部管理バーの[Shifter > Send Webhook]をクリックします。
+
+![screenthos](./img/19.png)
+
+[Execute]をクリックします。
+![screenthos](./img/20.png)
+
+Netlifyでビルドが始まります。
+![screenthos](./img/21.png)
+
+Netlifyの[Deploys]でビルドが成功したことを確認します。
+![screenthos](./img/22.png)
+
+URLをクリックして、公開されたサイトを確認します。
+![screenthos](./img/23.png)
 
 
 ## Checklist
@@ -209,6 +233,22 @@ Branchはmasterのまま、[Save]をクリックします。
 - [ ] NetlifyでGitHubのリポジトリと連携したサイトを作成した
 - [ ] ShifterのWordPressからNetlifyのwebhookを実行した
 - [ ] ShifterのWordPress記事をNetlify上に公開できた
+
+## Step2: まとめ
+Step3では、Gatsbyを使ったサイトを実際に運用するフローを体験しました。  
+NetlifyのWebhookはShifterのプリインストールプラグインが用意しているWP APIのエンドポイントをPOSTすることで実行しています。
+
+POST: shifter/v1/webhook
+https://github.com/getshifter/shifter-wp-webhook/blob/master/libs/scripts.js#L7-L17
+
+save_postなど、記事公開時に実行されるhookとこのAPIを組み合わせることで、  
+「WordPressで記事を公開すると、Gatsbyのビルドが実行される」というワークフローも作ることができます。
+
+また、Netlify / Gatsby側では環境変数の値`CONTAINER_URL`でビルドするサイトが変わる仕組みです。  
+そのため、汎用テーマを用意し、NetlifyのWebhookを呼び出すサイトだけを変更することで、複数のサイトを同一コードベースで運用することも可能です。  
+他にも`CONTAINER_URL`に通常のWordPressサイトURLを入れても動作しますので、マイグレーションについてもあまり難しくないでしょう。
+
+ぜひいろいろな運用方法を試していただき、Publishingしてください。
 
 ## Navigation
 - [Step1: WordPressサイトのセットアップ](./step1.md)

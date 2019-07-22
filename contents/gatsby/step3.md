@@ -174,6 +174,33 @@ Failの通知や表示が出ますが、慌てずに次のステップに移り�
 
 ## 3-4: Netlify WebhookをShifter WordPressから利用する
 
+### Netlify WebhookのURLを取得する
+Netlifyの管理画面を開き、先程作成したサイトを選択します。
+![screenshot](./img/11.png)
+
+[Deploys]を選択します。
+![sceenshot](./img/12.png)
+
+[Deploy Settings]を選択します。
+![screenthot](./img/13.png)
+
+スクロールして[Build hooks]を表示します。
+
+![screenthos](./img/14.png)
+
+[Add build hook]をクリックします。
+![screenthos](./img/15.png)
+
+[Name]にShifterのビルドで使用するということを書きます。
+Branchはmasterのまま、[Save]をクリックします。
+
+![screenthos](./img/16.png)
+作成されたWebhookのURLをコピーします。
+
+![screenthos](./img/17.png)
+
+
+
 
 ## Checklist
 

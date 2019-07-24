@@ -14,6 +14,6 @@ Advancedなコンテンツを用意しておりますので、「進行が遅い
 
 |Step|Name|Description|URL|
 |:--|:--|:--|:--|
-|Step1|Shifter入門|アカウント作成からWordPressサイトの公開まで|[getting-started/README.md](https://github.com/getshifter/workshop/blob/master/getting-started/README.md)|
-|Step2|WebhookでNetlify連携|Shifter Webhook / Netlifyを利用し、外部サーバーへの公開フローを学ぶ|[netlify/README.md](https://github.com/getshifter/workshop/blob/master/netlify/README.md)|
-|Step3|Gatsby + ShifterでServerless WordPress|Gatsby / Netlify / Shifterを利用した、WordPressとSSG(Static Site Generator)の運用について学ぶ|[gatsby/README.md](https://github.com/getshifter/workshop/blob/master/gatsby/README.md)|
+|Step1|Shifter入門|アカウント作成からWordPressサイトの公開まで|[getting-started/README.md](https://github.com/getshifter/workshop/blob/master/step-by-step/getting-started/README.md)|
+|Step2|WebhookでNetlify連携|Shifter Webhook / Netlifyを利用し、外部サーバーへの公開フローを学ぶ|[netlify/README.md](https://github.com/getshifter/workshop/blob/master/step-by-step/netlify/README.md)|
+|Step3|Gatsby + ShifterでServerless WordPress|Gatsby / Netlify / Shifterを利用した、WordPressとSSG(Static Site Generator)の運用について学ぶ|[gatsby/README.md](https://github.com/getshifter/workshop/blob/master/step-by-step/gatsby/README.md)|
